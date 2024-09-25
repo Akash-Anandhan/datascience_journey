@@ -1,4 +1,5 @@
 import pandas as pd
+import matplotlib.pyplot as plt
 import numpy as np
 ser=[10,20,30,40,50]
 df=pd.Series(ser)
@@ -27,9 +28,11 @@ print("--------------------------------------------------------")
 df.dropna()
 
 
-column_name = "Python Worldwide(%)"
+column_name1 = "Python Worldwide(%)"
+column_name2 = "Month"
 #converting the colum in the csv file to array using numpy
-arr = df[column_name].to_numpy()
+arr = df[column_name2].to_numpy()
+arr1 = df[column_name2].to_numpy()
 
 
 #printing the minimum value using numpy
@@ -38,3 +41,24 @@ print("minimum value in the python worldwide column is ",min_value)
 print("--------------------------------------------------------")
 #printing the maximum element using the numpy with the converted array from colum
 print(np.max(arr))
+
+
+#data visualization using matplot lib
+#only points
+plt.plot( arr, arr1,'o')
+plt.show()
+
+#with line (no arguments)
+plt.plot( arr, arr1)
+plt.show()
+
+#with points and dotted lines
+plt.plot( arr, arr1,'o:g')
+plt.show()
+
+#with dotted lines
+plt.plot( arr, arr1,'--')
+plt.show()
+
+
+
