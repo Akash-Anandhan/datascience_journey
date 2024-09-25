@@ -27,10 +27,9 @@ print("--------------------------------------------------------")
 #clear all the null elements in the dataset
 df.dropna()
 
-
+#converting the colum in the csv file to array using numpy
 column_name1 = "Python Worldwide(%)"
 column_name2 = "Month"
-#converting the colum in the csv file to array using numpy
 arr = df[column_name2].to_numpy()
 arr1 = df[column_name2].to_numpy()
 
