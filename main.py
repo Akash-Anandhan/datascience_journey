@@ -60,6 +60,3 @@ plt.plot( arr, arr1,'--')
 plt.show()
 
 
-
-
-

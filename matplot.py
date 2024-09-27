@@ -56,4 +56,20 @@ plt.scatter(x,y)
 plt.scatter(x1,y1)
 plt.show()
 
+#COLOR IN GRAPH
+colors = np.random.rand(len(arr1))
+plt.scatter(x,y, c=colors ,cmap='viridis')
+plt.colorbar()
+plt.show()
+
+
+#creating a name array for bar graph
+arr5 = ['A','B','C','D','F']
+z= np.array(arr5)
+plt.bar(y,x, color='red')
+plt.show()
+
+#histogram plotting
+plt.hist(x,y)
+plt.show()
 
